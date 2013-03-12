@@ -26,6 +26,8 @@ type Connection struct {
 	// Name of connected node
 	Quality uint64 `json:"quality,omitempty"`
 	// A unitless "opinion" of the quality of the link
+	Attributes map[string]interface{} `json:"attributes,omitempty"`
+	// Any attributes
 
 	Disabled bool `json:"disabled,omitempty"`
 	// Whether the connection is currently inactive
